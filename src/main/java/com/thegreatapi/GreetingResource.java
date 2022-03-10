@@ -9,6 +9,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/hello")
+@Tag(name = "tClass1")
+@Tag(name = "tClass2")
+@Tag(name = "tClass3")
 public class GreetingResource {
 
     @GET

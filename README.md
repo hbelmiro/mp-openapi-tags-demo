@@ -10,19 +10,22 @@ info:
   title: mp-openapi-tags-demo API
   version: 1.0.0-SNAPSHOT
 tags:
-- name: tGet1
-- name: tGet2
-- name: tGet3
-- name: tPost1
-- name: tPost2
-- name: tPost3
+  - name: tClass1
+  - name: tClass2
+  - name: tClass3
+  - name: tGet1
+  - name: tGet2
+  - name: tGet3
+  - name: tPost1
+  - name: tPost2
+  - name: tPost3
 paths:
   /hello:
     get:
       tags:
-      - tGet1
-      - tGet2
-      - tGet3
+        - tGet1
+        - tGet2
+        - tGet3
       responses:
         "200":
           description: OK
@@ -32,9 +35,9 @@ paths:
                 type: string
     post:
       tags:
-      - tPost1
-      - tPost2
-      - tPost3
+        - tPost1
+        - tPost2
+        - tPost3
       requestBody:
         content:
           application/json:
